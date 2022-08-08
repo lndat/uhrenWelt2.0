@@ -26,12 +26,16 @@ This website was created with ASP.NET Core MVC (.NET 6).
 
 #### Screenshots
 ##### Frontpage 
-![Frontpage](/wwwroot/Img/Screenshots/InvoiceEmail.png?raw=true "Frontpage")
+![Frontpage](/wwwroot/Img/Screenshots/MainPage.png?raw=true "Frontpage")
 ##### Shoppage 
-![Shoppage](/Img/Screenshots/shoppage.png?raw=true "Shoppage")
+![Shoppage](/wwwroot/Img/Img/Screenshots/ShopPage.png?raw=true "Shoppage")
 ##### Cart 
-![Cart](/Img/Screenshots/cart.png?raw=true "Cart")
-##### Overview 
-![Overview](/Img/Screenshots/overview.png?raw=true "Overview")
+![Cart](/wwwroot/Img/Img/Screenshots/CartPage.png?raw=true "Cart")
+##### Detailpage 
+![Overview](/wwwroot/Img/Img/Screenshots/DetailPage.png?raw=true "Detailpage")
+##### Loginpage 
+![Invoice](/wwwroot/Img/Img/Screenshots/LoginPage.png?raw=true "Loginpage")
+##### Checkout 
+![Invoice](/wwwroot/Img/Img/Screenshots/Checkout.png?raw=true "Checkout")
 ##### InvoicePdf 
-![Invoice](/Img/Screenshots/invoice.png?raw=true "Invoice")
+![Invoice](/wwwroot/Img/Img/Screenshots/InvoiceEmail.png?raw=true "Invoice")
