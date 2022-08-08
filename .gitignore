@@ -1,0 +1,7 @@
+/appsettings.Development.json
+/Invoice
+/.vscode
+bin
+obj
+*.sql
+*.db

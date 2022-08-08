@@ -1,0 +1,20 @@
+﻿@model uhrenWelt.ViewModels.Products.IndexViewModel
+
+<div class="container">
+    <form class="row justify-content-center mb-4" asp-controller="Product" asp-action="Search">
+        <div class="col-sm-3 mt-2">
+            <input asp-for="@Model.Search" type="text" class="form-control" placeholder="Search.." />
+        </div>
+        <div class="col-sm-3 mt-2">
+            <select asp-for="@Model.CategoryId" asp-items="Model.Categories" class="form-select">
+                <option>Category</option>
+            </select>
+        </div>
+        <div class="col-sm-3 mt-2">
+            <select asp-for="@Model.ManufacturerId" asp-items="Model.Manufacturers" class="form-select">
+                <option>Manufacturer</option>
+            </select>
+        </div>
+            <button type="submit" class="btn btn-primary btn-sm" style="max-width: 80px; margin-top: 0.5rem;">Search</button>
+    </form>
+</div>

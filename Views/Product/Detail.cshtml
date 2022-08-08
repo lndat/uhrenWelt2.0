@@ -1,0 +1,41 @@
+﻿@model uhrenWelt.ViewModels.Products.DetailViewModel
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="@Model.ImagePath" alt="@Model.ProductName" style="max-width: 400px;"
+                class="rounded mx-auto d-block" />
+        </div>
+        <div class="col-md-8 my-auto">
+            <h2>@Model.ProductName</h2>
+            <h4>@Model.ManufacturerName</h4>
+            <div>
+                @Model.Description
+            </div>
+            <div>
+                @Model.Price
+            </div>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <a href="@Url.Action("AddProductToCart", "Cart", new { productId = @Model.Id })">
+                    <button type="submit" class="btn btn-primary btn-sm" style="max-width: 100px; margin-top: 0.5rem;">
+                        Add to cart
+                    </button>
+                </a>
+            }
+            else
+            {
+                <button disabled type="submit" class="btn btn-primary btn-sm" style="max-width: 100px; margin-top: 0.5rem;">
+                    Add to cart
+                </button>
+                <div class="alert alert-danger mt-5" style="max-width: 425px;" role="alert">
+                    To add products to cart, please register and login.
+                </div>
+            }
+        </div>
+            <div class="text-center">
+            <h6 class="mb-0"><a href="@Url.Action("Index", "Product")" class="text-body"><i
+                        class="fas fa-long-arrow-alt-left me-2"></i>Back to shop</a></h6>
+        </div>
+    </div>
+</div>

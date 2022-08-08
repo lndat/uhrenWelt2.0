@@ -1,0 +1,20 @@
+﻿@model uhrenWelt.ViewModels.Products.IndexViewModel
+
+<partial name="~/Views/Shared/_SearchFilterBar.cshtml" />
+
+<div class="product-container">
+    @foreach (var product in Model.Products)
+    {
+        <a href="@Url.Action("Detail", "Product", new { productid = @product.Id })" class="product-card">
+            <div class="product-image">
+                <img src="@product.ImagePath" alt="@product.ProductName" />
+            </div>
+            <div class="product-info">
+                <h5>@product.ManufacturerName</h5>
+                <h6 style="font-size: 15px;">@product.ProductName</h6>
+                <p></p>
+                <h6 style="color: green;">@product.Price</h6>
+            </div>
+        </a>
+    }
+</div>

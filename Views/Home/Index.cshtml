@@ -1,0 +1,51 @@
+﻿<div class="containerText">
+    <h1 class="display-1 centered text-center">UhrenWelt</h1>
+</div>
+
+
+<blockquote class="blockquote text-center">
+  <p>We carry a large selection of some of the most popular luxury brands to ensure that you get exactly what you're looking for. Browse some of our selected timepieces to find a wristwatch that fits your style.</p>
+</blockquote>
+
+<hr class="mb-4">
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="text-center">
+                <a href="@Url.Action("Search", "Product", new { manufacturerId = 5 })">
+                    <img src="../Img/Logos/iwc.jpg" class="carouselLogo" /></a>
+                <a href="@Url.Action("Search", "Product", new { manufacturerId = 8 })">
+                    <img src="../Img/Logos/panerai.jpg" class="carouselLogo" /></a>
+                <a href="@Url.Action("Search", "Product", new { manufacturerId = 6 })">
+                    <img src="../Img/Logos/longines.jpg" class="carouselLogo" /></a>
+                <a href="@Url.Action("Search", "Product", new { manufacturerId = 7 })">
+                    <img src="../Img/Logos/tudor.jpg" class="carouselLogo" /></a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="text-center">
+                <a href="@Url.Action("Search", "Product", new { manufacturerId = 3 })">
+                    <img src="../Img/Logos/tag_heuer.jpg" class="carouselLogo"></a>
+                <a href="@Url.Action("Search", "Product", new { manufacturerId = 1 })">
+                    <img src="../Img/Logos/brand_rolex.jpg" class="carouselLogo" /></a>
+                <a href="@Url.Action("Search", "Product", new { manufacturerId = 4 })">
+                    <img src="../Img/Logos/brand_hublot.jpg" class="carouselLogo" /></a>
+                <a href="@Url.Action("Search", "Product", new { manufacturerId = 2 })">
+                    <img src="../Img/Logos/breitling.jpg" class="carouselLogo" /></a>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<hr class="mt-4">
+<div class="row justify-content-center">
+    <partial name="~/Views/Shared/_Top5Products.cshtml" />
+</div>

@@ -1,0 +1,21 @@
+﻿@model IEnumerable<uhrenWelt.ViewModels.Products.Top5ViewModel>
+
+@if (Model.Count() > 0)
+{
+    <div class="col-12">
+    <h4 class="text-center">Bestsellers</h4>
+    </div>
+}
+@foreach (var item in Model)
+{
+    <a href="@Url.Action("Detail", "Product", new { productid = @item.Id })" class="top5-card">
+    <div class="top5-image">
+        <img src="@item.ImagePath" alt="@item.ProductName" />
+    </div>
+    <div class="product-info">
+        <h6>@item.ManufacturerName</h6>
+        <h6 style="font-size: 12px;">@item.ProductName</h6>
+        <h6 style="color: green; font-size: 12px;">@item.UnitPrice</h6>
+    </div>
+</a>
+}

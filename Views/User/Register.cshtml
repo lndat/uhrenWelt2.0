@@ -1,0 +1,88 @@
+﻿@model uhrenWelt.ViewModels.User.RegisterViewModel
+<h3 class="text-center">Register Account</h3>
+
+<form method="post" action="/User/Register">
+    <div class="text-danger" asp-validation-summary="All"></div>
+    <div class="form-outline col-5" style="margin:0 auto;">
+        <label asp-for="@Model.Email"></label>
+        <input type="text" asp-for="@Model.Email" class="form-control" />
+    </div>
+    <div class="text-center mb-2">
+        <span class="text-danger" asp-validation-for="@Model.Email"></span>
+    </div>
+
+    <div class="form-outline col-5" style="margin:0 auto;">
+        <label asp-for="@Model.Password"></label>
+        <input type="password" asp-for="@Model.Password" class="form-control" />
+    </div>
+    <div class="text-center mb-2">
+        <span class="text-danger" asp-validation-for="@Model.Password"></span>
+    </div>
+
+    <div class="form-outline col-5" style="margin:0 auto;">
+        <label asp-for="@Model.ConfirmPassword"></label>
+        <input type="password" asp-for="@Model.ConfirmPassword" class="form-control" />
+    </div>
+    <div class="text-center mb-2">
+        <span class="text-danger" asp-validation-for="@Model.ConfirmPassword"></span>
+    </div>
+
+    <div class="form-outline col-5" style="margin:0 auto;">
+        <label asp-for="@Model.Title"></label>
+        <input type="text" asp-for="@Model.Title" class="form-control" />
+    </div>
+    <div class="text-center mb-2">
+        <span class="text-danger" asp-validation-for="@Model.Title"></span>
+    </div>
+
+    <div class="form-outline col-5" style="margin:0 auto;">
+        <label asp-for="@Model.FirstName"></label>
+        <input type="text" asp-for="@Model.FirstName" class="form-control" />
+    </div>
+    <div class="text-center mb-2">
+        <span class="text-danger" asp-validation-for="@Model.FirstName"></span>
+    </div>
+
+    <div class="form-outline col-5" style="margin:0 auto;">
+        <label asp-for="@Model.LastName"></label>
+        <input type="text" asp-for="@Model.LastName" class="form-control" />
+    </div>
+    <div class="text-center mb-2">
+        <span class="text-danger" asp-validation-for="@Model.LastName"></span>
+    </div>
+
+    <div class="form-outline col-5" style="margin:0 auto;">
+        <label asp-for="@Model.Street"></label>
+        <input type="text" asp-for="@Model.Street" class="form-control" />
+    </div>
+    <div class="text-center mb-2">
+        <span class="text-danger" asp-validation-for="@Model.Street"></span>
+    </div>
+
+    <div class="form-outline col-5" style="margin:0 auto;">
+        <label asp-for="@Model.City"></label>
+        <input type="text" asp-for="@Model.City" class="form-control" />
+    </div>
+    <div class="text-center mb-2">
+        <span class="text-danger" asp-validation-for="@Model.City"></span>
+    </div>
+
+    <div class="form-outline col-5" style="margin:0 auto;">
+        <label asp-for="@Model.Zip"></label>
+        <input type="text" asp-for="@Model.Zip" class="form-control" />
+    </div>
+    <div class="text-center mb-2">
+        <span class="text-danger" asp-validation-for="@Model.Zip"></span>
+    </div>
+
+    <div class="col d-flex justify-content-center mt-4">
+        <div class="form-check">
+            <label asp-for="@Model.AcceptTerms"></label>
+            <input class="form-check-input" type="checkbox" value="" checked />
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <button type="submit" class="btn btn-primary btn-block mb-4">Register</button>
+    </div>
+</form>
