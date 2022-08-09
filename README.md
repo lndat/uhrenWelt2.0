@@ -1,8 +1,8 @@
 ### uhrenWelt2.0
-This website was created with ASP.NET Core MVC (.NET 6).
+This website was created with ASP.NET Core 6 MVC.
 
 #### Libraries and Technologies used 
-- ASP.NET MVC
+- ASP.NET Core 6 MVC
 - Entity Framework
 - Microsoft Identity for Authentication and Authorization 
 - MSSQL/SQLite
