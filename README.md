@@ -2,8 +2,8 @@
 This website was created with ASP.NET Core 6 MVC.
 
 #### Libraries and Technologies used 
-- ASP.NET Core 6 MVC
-- Entity Framework
+- ASP.NET Core 6 MVC 
+- Entity Framework Core
 - Microsoft Identity for Authentication and Authorization 
 - MSSQL/SQLite
 - CSS
