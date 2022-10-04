@@ -39,8 +39,9 @@ builder.Services.ConfigureApplicationCookie(options =>
 
 builder.Services.Configure<DataProtectionTokenProviderOptions>(o =>
    o.TokenLifespan = TimeSpan.FromHours(2));
+   
 builder.Services.Configure<SmtpSettings>(builder.Configuration.GetSection("SMTP"));
-builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddSingleton<IEmailService, EmailService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<IProductService, ProductService>();

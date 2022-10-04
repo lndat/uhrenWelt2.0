@@ -23,7 +23,6 @@ public class HomeController : Controller
     {
         var dbProducts = await _productService.GetTopProducts();
         var top5Products = new List<Top5ViewModel>();
-        
 
         foreach (var dbProduct in dbProducts)
         {
