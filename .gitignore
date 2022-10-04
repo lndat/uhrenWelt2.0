@@ -280,3 +280,4 @@ obj
 *.sql
 *.db
 .DS_Store
+*uhrenWelt.db*
